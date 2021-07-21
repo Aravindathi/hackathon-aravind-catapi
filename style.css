@@ -35,6 +35,7 @@
 @media screen and (min-width: 900px) {
     .searchBar {
         flex-flow: row;
+        height:200px;
     }
 }
 
