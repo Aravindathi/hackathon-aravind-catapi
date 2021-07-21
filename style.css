@@ -18,7 +18,7 @@
 }
 
 .searchBar {
-    height: 100px;
+    height: 200px;
     width: 100vw;
     background: rgb(166, 213, 40);
     background: linear-gradient(170deg, rgba(166, 213, 40, 1) 12%, rgba(201, 204, 47, 1) 36%, rgba(190, 226, 49, 1) 62%, rgba(140, 194, 15, 0.9) 89%);
@@ -35,7 +35,7 @@
 @media screen and (min-width: 900px) {
     .searchBar {
         flex-flow: row;
-        height:200px;
+        height:100px;
     }
 }
 
