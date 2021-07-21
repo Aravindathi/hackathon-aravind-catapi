@@ -51,12 +51,17 @@
 }
 
 .siteHeading {
-    font-size: 40px;
+    font-size: 20px;
     grid-area: right;
     justify-self: flex-end;
     margin-left: 8%;
     font-family: 'Otomanopee One', sans-serif;
     color: rgb(35, 47, 204);
+}
+@media screen and (min-width: 900px) {
+    .siteHeading {
+       font-size: 40px;
+    }
 }
 
 .eachCatBox {
