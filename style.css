@@ -1,46 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
 .layout {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     background-color: rgba(215, 245, 147, 0.3);
     align-content: center;
     justify-content: center;
     row-gap: 0.05%;
     column-gap: 1%;
-    padding: 4%;
+    margin: 0px;
+    padding: 1%;
 }
 
-@media screen and (max-width: 2000px) {
+@media screen and (min-width: 900px) {
     .layout {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-@media screen and (max-width: 1500px) {
-    .layout {
-        display: grid;
         grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .layout {
-        display: grid;
-        grid-template-columns: 1fr;
     }
 }
 
 .searchBar {
     height: 100px;
-    width: 100%;
+    width: 100vw;
     background: rgb(166, 213, 40);
     background: linear-gradient(170deg, rgba(166, 213, 40, 1) 12%, rgba(201, 204, 47, 1) 36%, rgba(190, 226, 49, 1) 62%, rgba(140, 194, 15, 0.9) 89%);
     opacity: 0.6;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     /* //position: sticky;  */
     top: 0;
+    margin-bottom: 3%;
+}
+
+@media screen and (min-width: 900px) {
+    .searchBar {
+        flex-flow: row;
+    }
 }
 
 #searchBox {
@@ -51,6 +46,7 @@
     border: 2px solid rgb(52, 52, 170);
     padding: 15px;
     align-self: center;
+    margin-left: 10%;
 }
 
 .siteHeading {
@@ -66,15 +62,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    /* padding: 1%; */
-    margin: 1%;
     opacity: 0.8;
     border: 2px solid brown;
-    position: relative;
     text-align: center;
     background-image: linear-gradient(to right top, #dfa715, #d89f13, #d29711, #cb8f10, #c4870e, #c18b08, #bd9003, #b99400, #b5a600, #acb800, #9eca00, #88dc21);
-    row-gap: 0px;
-    column-gap: 0px;
 }
 
 #searchButton {

@@ -7,12 +7,13 @@ fetch("https://cataas.com/api/cats")
 //Creating Searchbar.
 const searchBar = document.createElement("div");
 searchBar.setAttribute("class", "searchBar");
-searchBar.innerHTML = `<input type = "search"
+searchBar.innerHTML = `<p class = "siteHeading">CAT COLLECTION</p>
+<input type = "search"
 name = "Search"
 id = "searchBox"
 placeholder = "Search Cats">
 <button type="submit" onclick="searchFunction()" id = "searchButton">Search</button>
-<p class = "siteHeading">CAT COLLECTION</p>`
+`
 document.body.append(searchBar)
     // Searchbar Complete.
 
